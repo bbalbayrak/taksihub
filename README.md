@@ -4,6 +4,7 @@ A Go microservices-based taxi management system.
 
 ## Project Structure
 
+```
 taxihub/
 ├── driver-service/
 │ ├── cmd/
@@ -20,6 +21,7 @@ taxihub/
 │
 ├── docker-compose.yml
 └── README.md
+```
 
 ## Services
 
