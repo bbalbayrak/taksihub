@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  driver-service:
+    build:
+      context: ./driver-service
+      dockerfile: driver-service/Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+    networks:
+      - taxihub-network
+
+networks:
+  taxihub-network:
+    driver: bridge
